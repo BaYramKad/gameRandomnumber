@@ -1,10 +1,7 @@
 const isNumber = function(n){
     return  !isNaN(parseFloat(n)) && isFinite(n);
 }
-
-
 let rDom;
-
 function randomGame(){ 
     rDom = 45;
         function dom(n){
@@ -18,7 +15,7 @@ function randomGame(){
                 alert("Поздравляем!!! Вы угадали")
             } else if(questuon > rDom){
                 alert("Загаданное число меньше");
-            } else if(isNumber(questuon) < rDom){
+            } else if(questuon < rDom){
                 alert("Загаданное число больше");
             }  
             dom(rDom);
