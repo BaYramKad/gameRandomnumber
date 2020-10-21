@@ -5,17 +5,17 @@ let rDom;
 function randomGame(){ 
     rDom = 45;
         function dom(n){
-            let questuon = prompt("Введите число от 1 до 100");
-            if (questuon === null){
+            let input = prompt("Введите число от 1 до 100");
+            if (input === null){
                 alert("Игра окончена"); 
             }
-            if(isNaN(questuon) || questuon.trim() == ""){
+            if(isNaN(input) || input.trim() == ""){
                 alert("Введите число!");
-            }else if(questuon == rDom){
+            }else if(input == rDom){
                 alert("Поздравляем!!! Вы угадали")
-            } else if(questuon > rDom){
+            } else if(input > rDom){
                 alert("Загаданное число меньше");
-            } else if(questuon < rDom){
+            } else if(input < rDom){
                 alert("Загаданное число больше");
             }  
             dom(rDom);
