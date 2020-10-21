@@ -1,6 +1,3 @@
-const isNumber = function(n){
-    return  !isNaN(parseFloat(n)) && isFinite(n);
-}
 let rDom;
 function randomGame(){ 
     rDom = 45;
